@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      const navButton = document.getElementById("nav-button");
+      const navMenu = document.getElementById("nav-menu");
+
+      navButton.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+      });
+    </script>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <header>
+      <h1>My Website</h1>
+      <button id="nav-button">Menu</button>
+    </header>
+    <nav id="nav-menu">
+      <img src="akshay.png" alt="Profile Photo">
+      <div id="credentials">
+        <p id = 'name'>Akshay Pandit</p>
+        <p id = 'position'>PhD Candidate in CEE at UIUC</p>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+
+      <ul id="social-media-links">
+        <li><a href="https://github.com/Akshay163"><img src="github-logo.png" alt="GitHub"></a></li>
+        <li><a href="https://twitter.com/AkshayPandit163"><img src="twitter-logo.png" alt="Twitter"></a></li>
+        <li><a href="https://linkedin.com/in/akshay-pandit"><img src="linkedin-logo.png" alt="LinkedIn"></a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the homepage of my website.</p>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <p>Read about my educational background and experiences.</p>
+      </section>
+      <section id="work-experience">
+        <h2>Work Experience</h2>
+        <p>Learn about my professional background and previous jobs.</p>
+      </section>
+      <section id="research">
+        <h2>Research</h2>
+        <p>Read about my research interests and projects.</p>
+      </section>
+      <section id="news">
+        <h2>News</h2>
+        <p>Here you can find the latest news updates.</p>
+      </section>
+      <section id="blog">
+        <h2>Blog</h2>
+        <p>Check out my latest blog posts.</p>
+      </section>
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p>Learn more about my hobbies and interests.</p>
+      </section>
+      <section id="contact-me">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me through this contact form:</p>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email"><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message"></textarea><br>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright 2021 My Website</p>
+    </footer>
